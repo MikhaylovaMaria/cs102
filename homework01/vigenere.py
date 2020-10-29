@@ -46,7 +46,7 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
     a=ord(i)
     shift = ord(b)-65
     if shift == 0:
-      ciphertext += chr(a)
+      plaintext += chr(a)
     
     
     elif a - shift < 65 and 65 <= a <= 90:
